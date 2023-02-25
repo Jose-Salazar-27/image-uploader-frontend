@@ -26,32 +26,6 @@
   letter-spacing: -0.035em;
 }
 
-.imageContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.dropZone {
-  width: 338px;
-  height: 218.9px;
-  background-color: #f6f8fb;
-  margin: 0 auto;
-  border-radius: 12px;
-  display: grid;
-  place-content: center;
-  border-color: red;
-
-  border-color: #97bef4;
-  border-style: dashed;
-}
-
-.dropZoneImage {
-  width: 114.13px;
-  height: 88.24px;
-}
-
 .text {
   font-weight: 500;
   font-size: 12px;
@@ -59,11 +33,6 @@
   letter-spacing: -0.035em;
   color: #bdbdbd;
   text-align: center;
-}
-
-.imageContainer {
-  width: 100%;
-  height: 100%;
 }
 
 .button {
