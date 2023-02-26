@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
+
 import { Form } from './components/Form/Form';
 
 import './App.css';
