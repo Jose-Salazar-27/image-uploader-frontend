@@ -1,6 +1,5 @@
-export const handleDrop = (e, setState) => {
+export const handleDrop = (e, setState, setLoading) => {
   e.preventDefault();
-  // const { items } = e.dataTransfer;
 
   if (e.dataTransfer.items) {
     [...e.dataTransfer.items].forEach((item, i) => {
@@ -8,10 +7,12 @@ export const handleDrop = (e, setState) => {
       if (item.kind === 'file') {
         const file = item.getAsFile();
         setState(file);
+        setLoading(true);
       } else {
         // Use DataTransfer interface to access the file(s)
         [...e.dataTransfer.files].forEach((file, i) => {
           setState(file);
+          setLoading(true);
         });
       }
     });
