@@ -1,0 +1,62 @@
+.Loader {
+  width: 400.36px;
+  height: 143.57px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.title {
+  color: #4f4f4f;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+
+  padding-left: 32px;
+  margin: 36px 0 30px 0;
+}
+
+.spinner {
+  background-color: #f2f2f2;
+  width: 340.71px;
+  height: 6px;
+  border-radius: 12px;
+  overflow-x: hidden;
+  margin-left: 32px;
+}
+
+.spinnerBar {
+  background-color: #2f80ed;
+  width: 100.93px;
+  height: 6px;
+  border-radius: 12px;
+  transform: translateX(0);
+
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: translate(-100px);
+  }
+  25% {
+    transform: translate(85px);
+  }
+  50% {
+    transform: translate(170px);
+  }
+  100% {
+    transform: translate(360px);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
