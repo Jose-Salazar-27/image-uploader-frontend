@@ -4,7 +4,7 @@ import { dragAndDrop, handleDrop } from './drop-handling';
 
 export function DropZone({ files, setFiles, setLoading }) {
   return (
-    <div id='DROPZONE' className={styles.dropZone} onDragOver={e => dragAndDrop(e)} onDrop={e => handleDrop(e, setFiles)}>
+    <div id='DROPZONE' className={styles.dropZone} onDragOver={e => dragAndDrop(e)} onDrop={e => handleDrop(e, setFiles, setLoading)}>
       <div className={styles.imageContainer}>
         <img src={dropZoneImage} className={styles.dropZoneImage} alt='' />
         <p className={styles.text}>Drag an Drop your image here</p>

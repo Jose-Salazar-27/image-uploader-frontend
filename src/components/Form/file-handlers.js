@@ -1,15 +1,18 @@
-import { uploadImages } from '../../services/images.services';
-
-export const handleSelectFile = (e, setState) => {
+export const handleSelectFile = (e, setState, setLoading) => {
   const file = e.target.files;
-  setState(file[0]);
+
+  const payload = new FormData();
+  payload.append('my-file', file[0]);
+
+  setState(payload);
+  setLoading(true);
 };
 
-export const submitFile = async (e, state) => {
+export const submitFile = async (e, state, setLoading) => {
   e.preventDefault();
 
   const payload = new FormData();
   payload.append('my-file', state);
 
-  await uploadImages(payload);
+  setLoading(true);
 };

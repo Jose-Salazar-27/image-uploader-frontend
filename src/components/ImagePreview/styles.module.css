@@ -1,0 +1,100 @@
+.container {
+  width: 400.36px;
+  height: 454.96px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.checkIconContainer {
+  width: 35px;
+  height: 35px;
+  margin: 35px auto 10px auto;
+}
+
+.checkIconContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #4f4f4f;
+  margin-bottom: 16px;
+}
+
+.imageContainer {
+  position: relative;
+  width: 338px;
+  height: 224.4px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 auto 16px auto;
+}
+
+/* .imageContainer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4f4f4f;
+} */
+
+.image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.urlTextBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 338px;
+  height: 34px;
+  background: #f6f8fb;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.urlTextBox p {
+  max-width: 240px;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: -0.035em;
+}
+
+.button {
+  display: none;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 74px;
+  height: 30px;
+  background: #2f80ed;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  flex-shrink: 0;
+  color: #fff;
+  cursor: pointer;
+}
