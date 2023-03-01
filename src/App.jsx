@@ -19,11 +19,11 @@ export default function App() {
   const Navigate = useNavigate();
 
   useEffect(() => {
+    const controller = new AbortController();
     if (loading) {
-      uploadImages(files)
+      uploadImages(files, controller)
         .then(response => response.json())
         .then(json => {
-          // console.log(json);
           Navigate('/file', { state: { json } });
           setloading(false);
         })
@@ -31,8 +31,10 @@ export default function App() {
           console.log(error);
           setloading(false);
         });
-      console.log('submiting');
     }
+    return () => {
+      controller.abort();
+    };
   }, [loading]);
 
   return (
