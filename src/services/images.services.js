@@ -1,9 +1,8 @@
-export const uploadImages = data => {
-  const controller = new AbortController();
+export const uploadImages = (data, controller) => {
   const config = {
     method: 'POST',
     body: data,
     signal: controller.signal,
   };
-  return fetch('http://localhost:8800/api/upload', config);
+  return fetch('https://image-uploader-backend-production-865d.up.railway.app/api/upload', config);
 };
